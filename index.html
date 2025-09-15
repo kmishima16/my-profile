@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>職務経歴書</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Interフォントを読み込む */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        /* 日本語フォントはNoto Sans JPを適用 */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+            background-color: #f9fafb; /* Slightly off-white background */
+        }
+        
+        /* h2の見出しスタイル */
+        /* h3の見出しスタイル */
+        /* 箇条書きリストのスタイル */
+        ul {
+            list-style-type: disc;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* 本文テキストのスタイル */
+        p {
+            line-height: 1.75; /* 行間を広げる */
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <div class="max-w-4xl mx-auto p-6 sm:p-10">
+
+        <header class="mb-12">
+            <h1 class="text-4xl font-bold text-gray-900">職務経歴書</h1>
+        </header>
+
+        <main>
+            <section id="profile">
+                <h2 class="border-b border-gray-300 pb-2 mt-10 mb-6 text-2xl font-semibold">自己紹介</h2>
+                <ul>
+                    <li><span class="font-semibold">名前：</span>三島 賢祐</li>
+                    <li><span class="font-semibold">生年月日：</span>1994年11月16日（30歳）</li>
+                    <li><span class="font-semibold">居住歴：</span>広島県（30年）</li>
+                </ul>
+            </section>
+
+            <section id="history">
+                <h2 class="border-b border-gray-300 pb-2 mt-10 mb-6 text-2xl font-semibold">学歴・職務経歴</h2>
+                <ul>
+                    <li><span class="font-mono">2012年4月：</span> 広島大学 工学部 第二類（電気・電子・情報）入学</li>
+                    <li><span class="font-mono">2017年3月：</span> 広島大学 中途退学</li>
+                    <li><span class="font-mono">2018年11月 - 2020年03月：</span> 株式会社福山コンサルタント / 派遣・契約社員</li>
+                    <li><span class="font-mono">2020年04月 - 2025年09月：</span> 株式会社福山コンサルタント / 正社員（システム管理部）</li>
+                </ul>
+            </section>
+
+            <section id="experience">
+                <h2 class="border-b border-gray-300 pb-2 mt-10 mb-6 text-2xl font-semibold">業務経験</h2>
+
+                <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">道路・都市計画業務</h3>
+                    <p class="mb-4">
+                        交通系ビッグデータやアンケート調査データを活用した行動モデルを構築し、現在実施している事業の評価や将来の施策検証を定量・定性的に行うコンサルティング業務に従事しました。
+                    </p>
+                    <ul>
+                        <li><span class="font-semibold">担当:</span> 数理最適化モデルの構築、データ処理</li>
+                        <li><span class="font-semibold">使用言語・ツール:</span> R、SQL</li>
+                        <li><span class="font-semibold">貢献内容:</span> 他事例や論文を参考にした現行の評価モデルの改良、多角的な視点を用いた事業評価の支援</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">社内業務の支援ツール作成</h3>
+                    <p class="mb-4">
+                        社内業務における冗長な手作業（Excelの更新・再分析作業）をWebツールとしてシステム化し、業務効率化に貢献しました。これにより、月間150時間に相当する作業工数の削減や、手作業による計算ミス発生率低下といった成果を達成しました。
+                    </p>
+                    <p class="mb-4">
+                        また、Go言語でGUIアプリを作成した内容については、社外の<a href="https://connpass.com/event/329963/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Go言語勉強会</a>の会場で<a href="https://www.docswell.com/s/5543922/56V9N8-Gophers-Gathering-2025-01-18" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">LT発表</a>を行いました。
+                    </p>
+                    <ul>
+                        <li><span class="font-semibold">担当:</span> 開発、公開、運用まで一貫して担当</li>
+                        <li><span class="font-semibold">使用言語・ツール:</span> Python, React, Go</li>
+                        <li><span class="font-semibold">貢献:</span> ワークフローの自動化による工数削減・計算ミス防止に貢献</li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">基幹システムの支援ツール作成</h3>
+                    <p class="mb-4">
+                        総務・経理部の手作業によるデータ処理を支援するツールを開発しました。これにより、データ処理のワークフローを見える化し、属人化を解消するとともに、ヒューマンエラーによる計算ミスを防止しました。
+                    </p>
+                    <ul>
+                        <li><span class="font-semibold">担当:</span> 基幹システムデータの定期取得、保存フォーマットの整備、ワークフローのシステム化</li>
+                        <li><span class="font-semibold">使用言語・ツール:</span> Next.JS, Excel VBA</li>
+                        <li><span class="font-semibold">貢献:</span> データ処理の内容をシステムとして切り出すことにより、属人作業となっていた処理を見える化し、手作業による確認漏れや計算ミスの防止に貢献</li>
+                    </ul>
+                </article>
+                
+                <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">社内ITリテラシー向上支援</h3>
+                    <p class="mb-4">
+                        非IT部門の職員を対象に、Microsoft 350やGoogle Workspaceの活用方法、情報セキュリティに関する勉強会を定期開催し、各種ツールの導入・操作マニュアルを作成・配布するなど、ITリテラシー向上に向けた活動を実施しました。
+                    </p>
+                    <ul>
+                        <li><span class="font-semibold">担当:</span> 社内ITツールの活用法・情報セキュリティに関する勉強会の資料作成・講師</li>
+                        <li><span class="font-semibold">貢献:</span> ITツールの利用率や満足度向上、問い合わせ対応にかかる工数の削減</li>
+                    </ul>
+                </article>
+            </section>
+
+            <section id="pr">
+                <h2 class="border-b border-gray-300 pb-2 mt-10 mb-6 text-2xl font-semibold">自己PR</h2>
+                <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">「技術選定」について</h3>
+                    <p class="mb-4">
+                        技術選定においては、機能的なメリットだけでなく、運用時のデメリットや将来的な拡張性までを考慮したトレードオフを重視しています。これに加え、チーム全体の生産性を最大化することも不可欠だと考えています。
+                    </p>
+                    <p>
+                        選定後においても、組織全体としての技術スタックの定着状況や、そのフレームワークの開発ガイドラインに沿った運用ができているかを意識し、スピードと品質を両立させるためのフィードバックループを維持することが、システム開発において不可欠な要素だと認識しています。
+                    </p>
+                </article>
+                <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">「Web開発」について</h3>
+                    <p class="mb-4">
+                        Web技術が進化してきた背景や思想に強い関心があり、表面的なトレンドだけでなく、その本質を理解することを心がけています。勉強会でのLT発表やOSS活動などを通じて、Web技術のエコシステムに貢献できるエンジニアを目指しています。
+                    </p>
+                    <p>
+                        また、御社が提供しているプラハチャレンジに2024年から参加しています。Web開発に必要な基礎概念を学習し、自分の言葉で説明できるレベルまで理解を深めることが、システムをより素早く柔軟に構築し、ユーザに価値を届けるための足掛かりになっていると感じています。
+                    </p>
+                </article>
+                 <article>
+                    <h3 class="mt-8 mb-4 text-xl font-semibold">「文章能力」について</h3>
+                    <p class="mb-4">
+                        フルリモート環境での円滑な業務遂行のためには、日々の活動内容や共有すべき課題をテキストで分かりやすく整理し、適切な文章構造や図表を用いて伝わりやすい文書を作成する能力が重要だと認識しています。
+                    </p>
+                    <p>
+                        文章作成においては、テクニカルライティング、<a href="http://www.kt.rim.or.jp/~hisashim/elementsofstyle/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">The Element of Styles</a>、<a href="https://www.kinokuniya.co.jp/f/dsg-01-9784478490273" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">考える技術・書く技術</a>、<a href="http://disadvantaged.web.fc2.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">トピックセンテンス</a>のような構造化文章のテクニックをもとに読みやすい文章を作ることを心がけています。
+                    </p>
+                </article>
+            </section>
+        </main>
+
+    </div>
+</body>
+</html>
+
